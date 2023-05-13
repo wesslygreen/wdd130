@@ -1,0 +1,18 @@
+img{
+    width: 350px;
+    float: right;
+}
+
+h1{
+    color: orange;
+}
+
+p{
+    color: purple;
+}
+
+section{
+    background-color: palevioletred;
+    overflow: auto;
+    padding: 25px;
+}
