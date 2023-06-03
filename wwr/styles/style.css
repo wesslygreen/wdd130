@@ -1,163 +1,206 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway&display=swap');
 
 
-home.home-title{
-    color: rgb(151, 184, 104);
-}
-div{
-    max-width: 1600px;
-    margin: 0 auto;
-
-}
-nav a{
-    text-align: center;
-    color: rgb(12, 12, 12);
-    text-decoration: none;
-    font-size: x-large;
-    padding: 35px;
-}
-nav a:hover{
-    color:rgb(172, 140, 240)
-}
-hero-msg h1{
-    text-align: center;
-}
-hero-msg h4{
-    text-align: center;
-    color: rgb(105, 25, 89);
-}
-h4{
-    color: darkgreen;
-}
-.button-box{
-    text-align: center;
-}
-main section{
-    text-align: center;
-}
-#background{
-    height: 725px;
-}
 body{
-    background-color: rgb(87, 181, 177);
-    font-family:Raleway, Arial, sans-serif;
-    font-size:22px;
+    background-color: rgb(48, 43, 119);
+    font-size: 22px;
+    font-family: Raleway, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-h2{
-    margin: 0;
+
+main section img {
+    box-sizing: border-box;
 }
-header{
-background-color: rgb(164, 187, 51);
+nav {
+    display: flex;
+    justify-content: space-around;
 }
-nav a:hover{
-    background-color: rgb(43, 73, 162);
-}
-.book{
-    background-color: rgb(58, 174, 187);
-    color: darkgreen;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-}
-.join{
-    background-color: rgb(41, 113, 46);
+nav a {
+    text-align: center;
+    font-size: xx-large;
+    font: Raleway;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-}
-.book:hover{
-    background-color: gold;
-    color:black
-}
-.join:hover{
-    background-color: rgb(136, 15, 39);
-    color: black;
-}
-#background{
-    background-color: burlywood;
-}
-.msg{
-    background-color: rgb(81, 131, 56);
-    line-height: 1.5em;
     padding: 35px;
 }
-footer{
-    background-color: salmon;
-    color: rgb(7, 37, 7);
+nav a:hover {
+    background-color: #7C9885;
+    color: rgb(85, 51, 51);
+}
+main section {
+    text-align: center;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+footer {
+    background-color: goldenrod;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-footer a{
-    color: rgb(16, 47, 16);
+footer a {
+    color: rgb(23, 16, 47);
     text-decoration: none;
 }
-footer a:hover{
-    color: rgb(255, 255, 255);
-}
-footer p a:hover{
+footer a:hover {
+    color: white;
     text-decoration: underline;
-
 }
-footer.social img{
+footer p {
+    font-size: 1.2em;
+    color: #033F63
+}
+
+footer .social img {
     padding-top: 15px;
 }
-.home-title{
-    color: white;
-    font-size: x-large;
-    font-family:Abril Fatface, Dancing Script, Caveat;
-    font-size: 2em;
-    margin-top: 10px;
+h2 {
+    margin: 0;
 }
-.msg h2{
-    color: rgb(6, 80, 88);
-    font-family:Raleway, Arial, sans-serif;
+h4 {
+    color: rgb(121, 195, 121);
 }
-.msg p{
-    color: rgb(209, 159, 21);
-    font-size: .8em;
-    padding-bottom: 15px;
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
-.icon{
+.card-img {
+    border: 10px solid rgb(135, 20, 20);
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #811041;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.mountains {
+    margin-top: 200px;
+    width: 100%;
+    box-shadow: 5px 5px 10px #0c005b;
+}
+.logo {
+    width: 80px;
+}
+.icon {
     width: 80px;
     padding-top: 10px;
 }
-.logo{
-    width: 80px;
-}
-#hero-msg h1{
-    text-align: center;
-    font-size: xx-large;
-}
-#hero-msg h4{
-    text-align: center;
-    font-size: xx-large;
 
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 }
-#hero-img{
+.card-img, .mountains {
     width: 100%;
 }
-#logo_link{
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+}
+.msg {
+    margin-top: 200px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+}
+.msg h2 {
+    color: white;
+    font-family: Raleway, Arial, sans-serif;
+
+}
+.msg p {
+    color: white;
+    
+    font-size: large;
+    padding-bottom: 15px;
+}
+.home-title {
+    color: #61e786;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+    
+}
+.book, .join {
+    background-color:#7C9885;
+    color: #28666E;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book:hover, .join:hover {
+    background-color: goldenrod;
+    color: white;
+}
+.msg {
+    background-color:  rgb(56, 101, 131);
+    line-height: 1.5em;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #3ef307;
+}
+.button-box {
+    text-align: center;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+#background {
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#hero-msg h1 {
+    text-align: center;
+    color: #508fb7;
+}
+#hero-img {
+    width: 100%;
+}
+#hero-msg h4 {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+#logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
-.rivers-card{
-    margin: 200px 0;
-}
-.camping-card{
-    margin: 200px 0;
-}
-.rapids-card{
-    margin: 200px 0;
-}
-.card-img{
-    border:10px solid black;
-}
-main section img{
-    box-sizing: border-box;
+#background {
+    height: 725px;
+    background-color: rgb(116, 52, 116);
+    margin-top: 200px;
 }
