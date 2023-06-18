@@ -204,6 +204,17 @@ h4 {
     background-color: rgb(116, 52, 116);
     margin-top: 200px;
 }
+.card-wr{
+    width: 50%;
+    
+}
+.main-p{
+    color: white;
+    border: 10px solid black;
+    box-shadow: 7px 7px 7px blue;
+}
+/*page 2*/
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
